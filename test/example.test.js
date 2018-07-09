@@ -2,7 +2,7 @@
 
 describe('example', () => {
 	it('linty', () => {
-		expect(true).toBe(true)
+		expect(true).toBe(true);
 	});
 
 	it('pass', () => {
@@ -10,6 +10,6 @@ describe('example', () => {
 	});
 
 	it('fail', () => {
-		expect(false).toBe(true);
+		expect(!false).toBe(true);
 	});
 });
