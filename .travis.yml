@@ -11,9 +11,9 @@ cache:
 env:
   -|
     test="
-    aaa \
-    bbb \
-    ccc \
+    aaa
+    bbb
+    ccc
     "
 
 script:
