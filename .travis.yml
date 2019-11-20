@@ -14,8 +14,7 @@ matrix:
   - os: linux
     node_js: v10.0.0
     env:
-    -|
-      test="
+    - test="
       aaa
       bbb
       ccc
