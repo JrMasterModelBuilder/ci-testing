@@ -7,7 +7,14 @@ cache:
   yarn: true
   directories:
     - "node_modules"
+    
+env:
+  -|
+    test=aaa \
+    bbb \
+    ccc
 
 script:
+  - env
   - yarn run lint
   - yarn run test
