@@ -8,8 +8,13 @@ cache:
   directories:
     - "node_modules"
     
-env:
-  -|
+matrix:
+  include:
+  # First test cross-OS packaging using most-significant examples:
+  - os: linux
+    node_js: v10.0.0
+    env:
+    - |
     test="
     aaa
     bbb
@@ -18,5 +23,8 @@ env:
 
 script:
   - env
+  - echo "${test}"
+  - echo "$test"
+  - echo $test
   - yarn run lint
   - yarn run test
