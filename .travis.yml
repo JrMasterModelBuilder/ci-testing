@@ -10,9 +10,11 @@ cache:
     
 env:
   -|
-    test=aaa \
+    test="
+    aaa \
     bbb \
-    ccc
+    ccc \
+    "
 
 script:
   - env
